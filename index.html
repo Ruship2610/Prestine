@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -17,9 +17,14 @@
     <header>
       <div class="container">
         <div class="header-inner">
-          <span class="hamBurger">hamBurger</span>
+          <span class="hamBurger"><svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.25 1.38714C0.25 0.758571 0.7629 0.25 1.39425 0.25H22.6058C22.9092 0.25 23.2003 0.369806 23.4149 0.583061C23.6294 0.796317 23.75 1.08555 23.75 1.38714C23.75 1.68873 23.6294 1.97797 23.4149 2.19122C23.2003 2.40448 22.9092 2.52429 22.6058 2.52429H1.39425C1.09078 2.52429 0.799732 2.40448 0.585143 2.19122C0.370555 1.97797 0.25 1.68873 0.25 1.38714Z" fill="white"/>
+            <path d="M0.25 7.88714C0.25 7.25857 0.7629 6.75 1.39425 6.75H22.6058C22.9092 6.75 23.2003 6.86981 23.4149 7.08306C23.6294 7.29632 23.75 7.58555 23.75 7.88714C23.75 8.18873 23.6294 8.47797 23.4149 8.69122C23.2003 8.90448 22.9092 9.02429 22.6058 9.02429H1.39425C1.09078 9.02429 0.799732 8.90448 0.585143 8.69122C0.370555 8.47797 0.25 8.18873 0.25 7.88714Z" fill="white"/>
+            <path d="M0.25 14.6129C0.25 13.9843 0.7629 13.4757 1.39425 13.4757H22.6058C22.9092 13.4757 23.2003 13.5955 23.4149 13.8088C23.6294 14.022 23.75 14.3113 23.75 14.6129C23.75 14.9144 23.6294 15.2037 23.4149 15.4169C23.2003 15.6302 22.9092 15.75 22.6058 15.75H1.39425C1.09078 15.75 0.799732 15.6302 0.585143 15.4169C0.370555 15.2037 0.25 14.9144 0.25 14.6129Z" fill="white"/>
+            </svg>
+            </span>
           <div class="logo-block">
-            <img src="images/logo.png" class="logo" alt="logo"/>
+            <img src="images/logo.png" class="logo" alt="logo" />
           </div>
           <nav>
             <ul class="navbar">
@@ -37,9 +42,31 @@
       </div>
     </header>
     <main>
+      <section class="mobile-overlay">
+        <div class="mobile-menu">
+          <span class="close-button"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M31.25 8.75L20.1481 20M20.1481 20L31.25 31.25M20.1481 20L8.75 31.25M20.1481 20L8.75 8.75" stroke="#212121" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg></span>
+            <div class="mobile-navbar">
+              <div class="mobile-menu-logo"><img src="/images/image 9 (1).png"/></div>
+              <ul class="mobile-nav">
+                <li><a class="mobile-navigation" href="">Home</a></li>
+                <li><a class="mobile-navigation" href="">Services</a></li>
+                <li><a class="mobile-navigation" href="">Portfolio</a></li>
+                <li><a class="mobile-navigation" href="">About</a></li>
+              </ul>
+              <a class="mobile-contact-button" href="#">Contact</a>
+            </div>
+        </div>
+      </section>
       <section class="bannerSection">
-        <img src="/images/Frame 37 (1).png" class="bannerImage" alt="banner-image" />
+        <img
+          src="/images/Frame 37 (1).png"
+          class="bannerImage"
+          alt="banner-image"
+        />
         <div class="TitleText">
+          <div class="mobile-logo"><img src="/images//image 9.png"/></div>
           <h1 class="title">Landscapes That Last, Beauty That Grows</h1>
           <p class="subTitle">
             Professional landscaping, garden design, and maintenance services
@@ -49,7 +76,7 @@
         </div>
       </section>
       <section class="serviceSection">
-        <div class="services">
+        <div class="container"> <div class="services">
           <div class="services-Title">
             <h1 class="servicetitle">Our Services</h1>
             <p class="serviceSubTitle">
@@ -59,7 +86,7 @@
             </p>
           </div>
           <div class="cards">
-            <div>
+            <div class="image-card">
               <img
                 src="/images/our-services-grid-img-1.png"
                 class="imageCard"
@@ -74,7 +101,7 @@
                 </p>
               </div>
             </div>
-            <div>
+            <div class="image-card">
               <img
                 src="/images/our-services-grid-img-2.png"
                 class="imageCard"
@@ -89,7 +116,7 @@
                 </p>
               </div>
             </div>
-            <div>
+            <div class="image-card">
               <img
                 src="/images/our-services-grid-img-3.png"
                 class="imageCard"
@@ -105,9 +132,11 @@
               </div>
             </div>
           </div>
-        </div>
+        </div></div>
+       
       </section>
       <section class="bookingSection">
+        <div class="container">
         <div class="bookingBanner">
           <div class="bookingTitle">
             <h1 class="bookingHeading">Transform Your Outdoors Today</h1>
@@ -120,9 +149,10 @@
             <a class="consultation-button">Book a Free Consultation</a>
           </div>
         </div>
-      </section>
+        </div>
+        </section>
       <section class="portfolioSection">
-        <div class="titleBox">
+         <div class="titleBox">
           <h1 class="portfolioTitle">Portfolio</h1>
           <p class="portfolioSubTitle">
             how we’ve transformed ordinary spaces into beautiful outdoor
@@ -132,54 +162,198 @@
           </p>
         </div>
         <div class="gridSection">
+      
+
           <div class="grid-item grid-item1">
-            <img src="/images/portfolio-grid-img-1.png"  alt="portfolio-image" />
-            <div class="overlay"><p class="imageText">Sustainable Garden Design</p></div>
+            <img src="/images/portfolio-grid-img-1.png" alt="portfolio-image" />
+            <div class="overlay">
+              <p class="imageText">Sustainable Garden Design</p>
+            </div>
           </div>
-          <div class="grid-item grid-item2"><img src="/images/portfolio-grid-img-2.png"  /> <div class="overlay"><p class="imageText">Sustainable Garden Design</p></div></div>
-          <div class="grid-item grid-item3"><img src="/images/portfolio-grid-img-3.png" /> <div class="overlay"><p class="imageText">Sustainable Garden Design</p></div></div>
-          <div class="grid-item grid-item4"><img src="/images/portfolio-grid-img-4.png"  /> <div class="overlay"><p class="imageText">Sustainable Garden Design</p></div></div>
-          <div class="grid-item grid-item5"><img src="/images/portfolio-grid-img-7.png" /> <div class="overlay"><p class="imageText">Sustainable Garden Design</p></div></div>
-          <div class="grid-item grid-item6"><img src="/images/portfolio-grid-img-5.png" /> <div class="overlay"><p class="imageText">Sustainable Garden Design</p></div></div>
-          <div class="grid-item grid-item7"><img src="/images/portfolio-grid-img-6.png" /> <div class="overlay"><p class="imageText">Sustainable Garden Design</p></div></div>
-          
+          <div class="grid-item grid-item2">
+            <img src="/images/portfolio-grid-img-2.png" />
+            <div class="overlay">
+              <p class="imageText">Sustainable Garden Design</p>
+            </div>
+          </div>
+          <div class="grid-item grid-item3">
+            <img src="/images/portfolio-grid-img-3.png" />
+            <div class="overlay">
+              <p class="imageText">Sustainable Garden Design</p>
+            </div>
+          </div>
+          <div class="grid-item grid-item4">
+            <img src="/images/portfolio-grid-img-4.png" />
+            <div class="overlay">
+              <p class="imageText">Sustainable Garden Design</p>
+            </div>
+          </div>
+          <div class="grid-item grid-item5">
+            <img src="/images/portfolio-grid-img-7.png" />
+            <div class="overlay">
+              <p class="imageText">Sustainable Garden Design</p>
+            </div>
+          </div>
+          <div class="grid-item grid-item6">
+            <img src="/images/portfolio-grid-img-5.png" />
+            <div class="overlay">
+              <p class="imageText">Sustainable Garden Design</p>
+            </div>
+          </div>
+          <div class="grid-item grid-item7">
+            <img src="/images/portfolio-grid-img-6.png" />
+            <div class="overlay">
+              <p class="imageText">Sustainable Garden Design</p>
+            </div>
+          </div>
         </div>
+       </div>
+       
+      </section>
+      <section class="slider-bar">
+        <div class="container"><div class="carousel-container">
+          <div class="carousel-track" id="carousel-track">
+            <div class="card"><img src="/images/portfolio-grid-img-1.png"><p>Sustainable Garden Design</p></div>
+            <div class="card"><img src="/images/portfolio-grid-img-2.png"><p>Sustainable Garden Design</p></div>
+            <div class="card"><img src="/images/portfolio-grid-img-3.png"><p>Sustainable Garden Design</p></div>
+            <div class="card"><img src="/images/portfolio-grid-img-4.png"><p>Sustainable Garden Design</p></div>
+            <div class="card"><img src="/images/portfolio-grid-img-5.png"><p>Sustainable Garden Design</p></div>
+            <div class="card"><img src="/images/portfolio-grid-img-6.png"><p>Sustainable Garden Design</p></div>
+            <div class="card"><img src="/images/portfolio-grid-img-7.png"><p>Sustainable Garden Design</p></div>
+          </div>
+      
+          <div class="pagination-dots" id="dots"></div>
+        </div></div>
+       
+      </section>
+      <section class="products">
+        <div class="all-products"><a href="#">View All Portfolio</a></div>
       </section>
     </main>
     <footer>
-      <div class="footerBox">
+      <div class="container"><div class="footerBox">
         <div class="footerLogo">
           <img src="images/image 9.png" class="footerLogo" />
         </div>
         <div class="details">
-          <div class="address">
-            <h1>Pristine Landscaping LLC</h1>
-            <h3>Shaping Nature, Crafting Beauty</h3>
-            <p>
+          <div class="footer-block">
+            <h1 class="footer-title">Pristine Landscaping LLC</h1>
+            <h3 class="footer-subtitle">Shaping Nature, Crafting Beauty</h3>
+            <p class="footer-text">
               From gardens to grand landscapes, we create outdoor spaces you’ll
               love for years to come.
             </p>
           </div>
-          <div class="quickLinks">
-            <h1>Quick Links</h1>
-            <div>
-              <ul>
+          <div class="footer-block">
+            <h1 class="footer-title">Quick Links</h1>
+            <div class="quick-link-box">
+              <ul class="links">
                 <li><a>Home</a></li>
                 <li><a>Portfolio</a></li>
                 <li><a>Service</a></li>
               </ul>
-              <ul>
+              <ul class="links">
                 <li><a>About</a></li>
                 <li><a>Contact</a></li>
               </ul>
             </div>
           </div>
-          <div class="contactInfo">
-            <h1>Contact Us</h1>
+          <div class="footer-block footer-block3">
+            <h1 class="footer-title">Contact Us</h1>
+            <div class="contact-main">
+              <div class="contact-text">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 19.1292C12.4436 19.1292 12.8872 18.9716 13.245 18.6564C15.3772 16.7785 19.5 12.608 19.5 8.4375C19.5 4.29534 16.1422 0.9375 12 0.9375C7.85784 0.9375 4.5 4.29534 4.5 8.4375C4.5 12.608 8.62284 16.7785 10.755 18.6565C11.1127 18.9716 11.5564 19.1292 12 19.1292Z"
+                    stroke="white"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M18.2372 18.1501C20.1626 18.6653 21.375 19.4151 21.375 20.2499C21.375 21.8032 17.1777 23.0624 12 23.0624C6.82233 23.0624 2.625 21.8032 2.625 20.2499C2.625 19.4151 3.83738 18.6653 5.76277 18.1501"
+                    stroke="white"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 11.25C13.5533 11.25 14.8125 9.9908 14.8125 8.4375C14.8125 6.8842 13.5533 5.625 12 5.625C10.4467 5.625 9.1875 6.8842 9.1875 8.4375C9.1875 9.9908 10.4467 11.25 12 11.25Z"
+                    stroke="white"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p class="footer-text">Hoover, AL, United States, Alabama</p>
+              </div>
+              <div class="contact-text">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.5478 16.8007L17.1474 15.0677L22.3341 16.8007V20.2667C22.3341 21.2238 21.5706 21.9998 20.6134 21.9998C11.0422 21.9998 2 13.0153 2 3.44411C2 2.48702 2.77593 1.7234 3.73302 1.7234H7.19907L8.93209 6.91016L7.19907 9.50969C8.30572 12.2763 11.7812 15.694 14.5478 16.8007Z"
+                    stroke="white"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p class="footer-text">+1 205-492-2282</p>
+              </div>
+              <div class="contact-text">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.21894 3.85979C0.859934 3.62058 0.644531 3.21809 0.644531 2.78699V2.78591C0.644531 2.02377 1.26242 1.40593 2.0246 1.40593H19.9754C20.7375 1.40593 21.3554 2.02377 21.3554 2.78591V2.7866V2.78699C21.3554 3.21809 21.14 3.62058 20.781 3.85979C19.0292 5.02789 13.7507 8.54665 11.7659 9.87008C11.302 10.1794 10.6979 10.1794 10.234 9.87008C8.24923 8.54665 2.97073 5.02789 1.21894 3.85979Z"
+                    stroke="white"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M0.644531 2.78651V15.213C0.644531 15.5793 0.789852 15.9303 1.04908 16.1892C1.30797 16.4484 1.65902 16.5938 2.02525 16.5938H19.9747C20.3409 16.5938 20.6919 16.4484 20.9508 16.1892C21.2101 15.9303 21.3554 15.5793 21.3554 15.213V2.78651"
+                    stroke="white"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p class="footer-text">Pristinelandscapingcompany@gmail.com</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="copyRights"></div>
-      </div>
+        <div class="copyRights">
+          <div class="copyright-title">
+            <div class="copyright-image">
+              <img src="/images/copyright 1.png" />
+            </div>
+            <p>2025 Pristine Landscaping LLC. All rights reserved.</p>
+          </div>
+          <div class="policies">
+            <p>Privacy Policy</p>
+            <p>Terms & Conditions</p>
+          </div>
+        </div>
+      </div></div>
+      
     </footer>
+    <script src="/JS/script.js"></script>
   </body>
 </html>
