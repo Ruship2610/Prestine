@@ -19,31 +19,29 @@ const totalSlides = cards.length;
     });
 
 
-// Dynamically get visible card count
+
 function getVisibleCardCount() {
   const containerWidth = document.querySelector('.carousel-container').offsetWidth;
-  const cardWidth = cards[0].offsetWidth + 16; // +gap
+  const cardWidth = cards[0].offsetWidth + 16; 
   return Math.floor(containerWidth / cardWidth);
 }
 
-// Get current card width (includes margin/gap)
+
 function getCardWidth() {
   const card = document.querySelector('.card');
-  return card.offsetWidth + 16; // add gap
+  return card.offsetWidth + 16;
 }
 
-// Update carousel position
 function updateSlider() {
   const cardWidth = getCardWidth();
   track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
 
-  // Update active dot
   document.querySelectorAll('#dots span').forEach((dot, i) => {
     dot.classList.toggle('active', i === currentIndex);
   });
 }
 
-// Setup dots and handlers
+
 function setupDots() {
   dotsContainer.innerHTML = '';
   for (let i = 0; i < totalSlides; i++) {
@@ -56,7 +54,7 @@ function setupDots() {
   }
 }
 
-// Reset on resize
+
 window.addEventListener('resize', () => {
   updateSlider();
 });
