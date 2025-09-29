@@ -9,13 +9,13 @@ let currentIndex = 0;
 const totalSlides = cards.length;
 
     menuBtn.addEventListener('click', () => {
-      console.log("hiiii");
-      document.querySelector(".mobile-overlay").style.right = 0;
+      document.getElementsByClassName("mobile-overlay")[0].style.right = 0;
+      document.getElementsByTagName("body")[0].style.overflow = "hidden";
     });
 
     closeBtn.addEventListener('click', () => {
-      document.querySelector(".mobile-overlay").style.right = "-100%";
-      
+      document.getElementsByClassName("mobile-overlay")[0].style.right = "-100%";
+      document.getElementsByTagName("body")[0].style.overflow = "auto";
     });
 
 
