@@ -3,13 +3,19 @@ const cards = document.querySelectorAll('.card');
 const dotsContainer = document.getElementById('dots');
 const menuBtn = document.querySelector('.hamBurger');
 const closeBtn = document.querySelector('.close-button');
+// const title1= document.querySelector("accordation-title1");
+// console.log(title1);
 console.log(menuBtn);
 
 let currentIndex = 0;
 const totalSlides = cards.length;
 
+
+  
+
     menuBtn.addEventListener('click', () => {
       document.getElementsByClassName("mobile-overlay")[0].style.right = 0;
+      document.getElementsByClassName("mobile-overlay")[0].style.display = "block";
       document.getElementsByTagName("body")[0].style.overflow = "hidden";
     });
 
@@ -61,3 +67,4 @@ window.addEventListener('resize', () => {
 
 setupDots();
 updateSlider();
+

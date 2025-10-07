@@ -10,6 +10,7 @@ html{
 
 body{
     overflow-x: hidden;
+    font-family: "Rubik,";
 }
 img {
     max-width: 100%;
@@ -854,3 +855,4 @@ footer{
 
    
 }
+
